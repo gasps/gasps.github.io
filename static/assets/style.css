@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-attachment:fixed;
+    height: 100%;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    /**/
+    background-size: cover;
+}
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+.container{
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.pfp-image{
+    animation: down 2s;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 10px solid #1f202038;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    max-width: 150px;
+    height: 150px;
+}
+.username{
+    animation: up 2s;
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+.bio-text{
+    font-size: 16px;
+    margin-top: 10px;
+    animation: up 2s;
+    font-weight: 500;
+    color: #f1f1f1bd;
+}
+.social-icons{
+    margin-top: 0px;
+    color: white;
+    font-size: 28px;
+    transition: 0.2s ease-in-out;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -63px;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+.social-icons:hover{
+    transform: scale(1.1);
+}
+.spotifys{
+    animation: up 2s;
+    margin-bottom: 50px;
+}
+.socials{
+    margin: 0 auto;
+    animation: up 2s;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.badge{
+    width: 20px;
+    height: 20px;
+}
+.disc-name{
+    font-weight: 600;
+    font-size: 16px;
+}
+.flex-display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 1px;
+    border: 1px solid gray;
+    width: 50%;
+    margin: auto;
+    border-radius: 20rem;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.disc{
+    font-size: 16px;
+    margin-right: 5px;
+    color: #5865F2;
+    text-shadow: rgba(88,101,242,1) 0px 0px 9px;
+}
+.img-class{
+    animation: up 2s;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+.btn-link{
+    animation: up 2s;
+    padding: 16px 44px;
+    width: 95%;
+    text-align: center;
+    background-color: #0d0d0e;
+    border: 1px solid #1c1c1c;
+    border-radius: 8px;
+    -webkit-box-shadow:0px 0px 17px 1px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.57);
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.57);
+    cursor: pointer;
+    color: #a7a7a7;
+    transition: transform 0.25s ease, color 0.25s ease, background-color 0.25s ease, border-color 0.25s ease;
+    margin-bottom: 22px;
+}
+.btn-link:hover{
+    -webkit-box-shadow:0px 0px 20px 1px rgb(47 47 47 / 90%);
+    -moz-box-shadow: 0px 0px 20px 1px rgb(47 47 47 / 90%);
+    box-shadow: 0px 0px 20px 1px rgb(47 47 47 / 90%);
+    transform: scale(0.95);
+}
+.btn-link:active{
+    transform: scale(0.92);
+}
+.sparkle{
+    background-image: url(../../../assets/sparkle.gif);
+}
+.mark{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.mark:hover{
+    text-decoration: underline;
+}
+.background{
+    padding: 80px 0px;
+}
+.blur{
+    background: rgb(0 0 0 / 40%);
+    backdrop-filter: blur(8px); 
+    width: 100%;
+    max-width: 80%;
+    margin: auto;
+    padding: 30px 0px;
+    margin-top: 80px;
+}
+.ytvid{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0.35rem !important;
+    animation: up 2s;
+}
+.ytvid-container    {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    border-radius: 0.4rem !important;
+    margin: 0px 7px;
+}
+@keyframes down {
+    from {
+        transform: translate3d(0, -150px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+@keyframes up {
+    from {
+        transform: translate3d(0, 150px, 0)
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeIn {
+from {opacity: 0;} 
+to {opacity:0.8;}
+}
+
+@keyframes fadeIn {
+from {opacity: 0;}
+to {opacity:0.8 ;}
+}
+@media only screen and (max-width: 768px) {
+    .blur{
+        max-width: 100%;
+    }
+  }
+  @media only screen and (min-width: 2000px) {
+    .blur{
+        max-width: 50%;
+    }
+  }
+  #snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+position: fixed;
+user-select: none;
+z-index: 1000;
+pointer-events: none;
+width: 15px;
+animation-name: snowflakes-shake;
+}
+@media only screen and (max-width: 768px) {
+    .snowflake{
+    width: 10px;
+}
+}
